@@ -1,4 +1,13 @@
 <x-layout>
-    <x-slot:heading>Home Page</x-slot:heading>
-    <p>Hello From Home Page</p> 
+    <x-blog-card></x-blog-card>
+    <x-blog-card></x-blog-card>
+    <x-blog-card></x-blog-card>
+    <x-blog-card></x-blog-card>
+    <x-blog-card></x-blog-card>
+    <x-blog-card></x-blog-card>
+    <x-blog-card></x-blog-card>
+    <x-blog-card></x-blog-card>
+    <x-blog-card></x-blog-card>
+    <x-blog-card></x-blog-card>
+    <x-blog-card></x-blog-card>
 </x-layout>
