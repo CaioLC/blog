@@ -12,11 +12,13 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('posts', function (Blueprint $table) {
-            $table->id();
+            // $table->id();
+            $table->char('slug', 256);
             $table->string('title');
-            $table->text('body');
+            $table->text('content');
             $table->boolean('public');
             $table->timestamps();
+            $table->primary('slug');
         });
     }
 

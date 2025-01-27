@@ -21,9 +21,13 @@ return new class extends Migration
 
         Schema::create('post_tag', function (Blueprint $table) {
             $table->id();
-            $table->foreignIdFor(Post::class)->constrained()->cascadeOnDelete();
+            $table->char('post_slug', 256);
             $table->foreignIdFor(Tag::class)->constrained()->cascadeOnDelete();
             $table->timestamps();
+            $table->foreign('post_slug')
+                ->references('slug')
+                ->on('posts')
+                ->cascadeOnDelete();
         });
     }
 

@@ -1,7 +1,6 @@
-@extends('layouts.app')
-
-@section('content')
-<div class="max-w-4xl mx-auto px-4 py-8 bg-amber-50 text-amber-900">
+<x-layout>
+    <p>This is a post</p>
+{{-- <div class="max-w-4xl mx-auto px-4 py-8 bg-amber-50 text-amber-900">
     <article>
         <h1 class="text-3xl font-bold text-amber-700 mb-4">
             {{ $post->title }}
@@ -38,15 +37,5 @@
             @endif
         </div>
     </article>
-</div>
-
-@push('scripts')
-<script>
-function copyCodeSnippet() {
-    const codeElement = document.querySelector('pre code');
-    const text = codeElement.textContent;
-    navigator.clipboard.writeText(text);
-}
-</script>
-@endpush
-@endsection
+</div> --}}
+</x-layout>
