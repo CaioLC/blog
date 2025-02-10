@@ -37,9 +37,9 @@ class Post extends Model
                     'title' => $post->title,
                     'slug' => $post->slug,
                     // Format date as "DD-Month-Year"
-                    'created_at' => $post->created_at->format('F d, Y'),
+                    'created_at' => $post->created_at->format('Y-m-d'),
                     // Truncate content to 100 chars and add ...
-                    'excerpt' => Str::limit($post->content, 100, '...'),
+                    'excerpt' => Str::limit($post->content, 300, '...'),
                     'tags' => $post->tags
                 ];
             });

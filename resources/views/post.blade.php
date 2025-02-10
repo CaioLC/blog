@@ -1,41 +1,24 @@
 <x-layout>
-    <p>This is a post</p>
-{{-- <div class="max-w-4xl mx-auto px-4 py-8 bg-amber-50 text-amber-900">
-    <article>
-        <h1 class="text-3xl font-bold text-amber-700 mb-4">
-            {{ $post->title }}
-        </h1>
-        
-        <div class="flex items-center mb-4 space-x-2">
-            <span class="text-sm text-amber-600">
-                {{ $post->published_at->format('F j, Y') }}
-            </span>
-            
-            @foreach($post->tags as $tag)
-                <span class="bg-amber-100 text-amber-700 px-2 py-1 rounded-full text-xs">
-                    {{ $tag->name }}
-                </span>
-            @endforeach
-        </div>
-        
-        <div class="prose prose-amber">
-            {!! $post->content !!}
-            
-            @if($post->code_snippet)
-            <div class="relative bg-gray-800 text-white rounded-lg p-4 mb-4">
-                <div class="flex justify-between items-center mb-2">
-                    <span class="text-sm">Code Snippet</span>
-                    <button 
-                        class="text-gray-300 hover:text-white transition-colors"
-                        onclick="copyCodeSnippet()"
-                    >
-                        Copy
-                    </button>
-                </div>
-                <pre class="text-sm overflow-x-auto"><code class="language-php">{{ $post->code_snippet }}</code></pre>
-            </div>
-            @endif
-        </div>
-    </article>
-</div> --}}
+    <h1 class="
+        {{-- text-center --}}
+        text-blue-600
+        font-serif
+        lg:text-6xl lg:my-16
+        md:text-5xl md:my-12 
+        sm:text-3xl sm:my-8 
+        text-2xl my-4"
+    >Welcome to this tittle. This is a post</h1>
+
+    {{-- Code snippet --}}
+    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio libero voluptate voluptatem esse! Quia nostrum rerum tempora, exercitationem, corrupti qui harum facere dignissimos error, doloribus magni libero explicabo quo officiis?</p>
+    <div>
+        <pre class="text-sm overflow-x-auto">
+          <code class="language-javascript">
+            function greet(name) {
+              console.log(`Hello, ${name}!`);
+            }
+            greet('Developer');
+          </code>
+        </pre>
+    </div>
 </x-layout>

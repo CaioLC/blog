@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root { 
+    /* border: 1px dashed magenta; */
+    background-color: rgb(31, 27, 27);
+    color: #E0E0E0;
+} 
+
+.accent {
+    color: #1d7ddd;
+}
+
+.accent2 {
+    color: rgb(234 88 12 / var(--tw-border-opacity, 1))
+}
