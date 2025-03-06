@@ -8,11 +8,13 @@ export default {
         './resources/**/*.blade.php',
         './resources/**/*.js',
         './resources/**/*.vue',
+        './public/fonts/*.ttf',
     ],
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+                sans: [...defaultTheme.fontFamily.sans],
+                title: ['OpenSans', ...defaultTheme.fontFamily.sans],
             },
         },
     },

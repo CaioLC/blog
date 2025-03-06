@@ -7,8 +7,12 @@ export default defineConfig({
             input: [
                 'resources/css/app.css',
                 'resources/js/app.js',
+
                 'resources/css/prism.css',
                 'resources/js/prism.js',
+
+                'resources/fonts/Lato-Regular.ttf',
+                'resources/fonts/OpenSans-SemiBold.ttf',
             ],
             refresh: true,
         }),

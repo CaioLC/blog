@@ -1,6 +1,6 @@
 @props([
   'data_user' => '',
-  'data_prompt' => 'notKyle@PC',
+  'data_prompt' => 'me@ubuntu',
   'data_continuation_prompt' => '>'
 ])
 

@@ -7,8 +7,6 @@
     
     <title>NotKyle's DevBlog</title>
     
-    {{-- Highlight.js --}}
-    <link rel="stylesheet" href="/resources/prism.css">
 </head>
 <body>
 <div>

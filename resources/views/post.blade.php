@@ -1,8 +1,8 @@
 <x-layout>
   <h1 class="
       {{-- text-center --}}
-      text-blue-600
-      font-serif
+      text-blue-700
+      font-title
       lg:text-6xl lg:my-16
       md:text-5xl md:my-12 
       sm:text-3xl sm:my-8 
@@ -19,11 +19,13 @@ def my_func(x: pd.DataFrame | None = None) -> pd.Series:
     return "Hello World"
 </x-code>
 <x-cmd>
-  echo "hello world!" \
-  echo "this as well"
-  (out)hello world! this as well
-  
-  -what is your name?
+sudo apt install postgresql postgresql-contrib
+sudo apt install nodejs npm
+/bin/bash -c "$(curl -fsSL https://php.new/install/linux/8.4)"
+laravel new your-project-name
+cd your-project-name
+npm install && npm run build
+composer run dev
 </x-cmd>
 
 <x-note type='info'>This is a cool tip</x-note>
